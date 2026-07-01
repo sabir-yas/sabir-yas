@@ -50,10 +50,10 @@
 
 ### Featured Projects
 
-**[SpatiaScale] — Cloud-Native Distributed Query Engine**
+**SpatiaScale — Cloud-Native Distributed Query Engine**
 Fault-tolerant spatial query engine on AWS EKS indexing 500M+ multi-dimensional points in S3 with sub-10ms p99 latency. Quadtree partitioning + ElastiCache cut memory usage 40%; gRPC/Apache Arrow layer delivered a 5x serialization speedup.
 
-**[Distributed ML Inference Pipeline]**
+**Distributed ML Inference Pipeline**
 Fault-tolerant distributed inference system handling 10,000+ simulated concurrent requests/sec with FastAPI, Kafka, Redis, Docker, and PyTorch ResNet-50. Kafka-partitioned queues cut response latency by 85%.
 
 **Trivia Wizards — Real-Time Multi-Interface Trivia Platform**
@@ -63,10 +63,3 @@ Full-stack real-time trivia app with three synchronized interfaces (host, kiosk,
 Distributed multi-agent system on Ray with Redis Streams for inter-agent messaging, a FastAPI + WebSocket backend, and a REST/agent-to-agent API validated by 92 integration tests.
 
 ---
-
-### GitHub Stats
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=sabir-yas&show_icons=true&theme=default&hide_border=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sabir-yas&layout=compact&hide_border=true" />
-</p>
