@@ -13,7 +13,7 @@
 
 ### About Me
 
-- 🎓 B.S. Computer Science, Honors Scholars Program @ University of Colorado Denver (Expected Dec 2027)
+- 🎓 B.S. Computer Science, Honors Scholars Program @ University of Colorado Denver
 - 🤖 AI Fellow @ **Colorado Thrives** — building agentic AI pipelines for a 120,000+-stakeholder workforce network
 - 🧠 Former ML Research Intern @ **CU Anschutz Medical Campus** — high-throughput pipelines for spatial transcriptomics research
 - 🛠️ I like building distributed systems, backend infrastructure, and AI agent architectures
