@@ -13,7 +13,7 @@
 
 ### About Me
 
-- 🎓 B.S. Computer Science, Honors Scholars Program @ University of Colorado Denver
+- 🎓 B.S. Computer Science, Honors Scholars Program @ University of Colorado Denver 
 - 🤖 AI Fellow @ **Colorado Thrives** — building agentic AI pipelines for a 120,000+-stakeholder workforce network
 - 🧠 Former ML Research Intern @ **CU Anschutz Medical Campus** — high-throughput pipelines for spatial transcriptomics research
 - 🛠️ I like building distributed systems, backend infrastructure, and AI agent architectures
@@ -46,14 +46,27 @@
   <img src="https://img.shields.io/badge/SLURM-024270?style=flat-square" />
 </p>
 
+---
+
+### Featured Projects
+
+**[SpatiaScale] — Cloud-Native Distributed Query Engine**
+Fault-tolerant spatial query engine on AWS EKS indexing 500M+ multi-dimensional points in S3 with sub-10ms p99 latency. Quadtree partitioning + ElastiCache cut memory usage 40%; gRPC/Apache Arrow layer delivered a 5x serialization speedup.
+
+**[Distributed ML Inference Pipeline]**
+Fault-tolerant distributed inference system handling 10,000+ simulated concurrent requests/sec with FastAPI, Kafka, Redis, Docker, and PyTorch ResNet-50. Kafka-partitioned queues cut response latency by 85%.
+
+**Trivia Wizards — Real-Time Multi-Interface Trivia Platform**
+Full-stack real-time trivia app with three synchronized interfaces (host, kiosk, TV display) built on Next.js, Prisma, Supabase Postgres, and Socket.io. WebSocket-only transport eliminates polling lag for instant gameplay.
+
+**Distributed Multi-Agent Orchestration System**
+Distributed multi-agent system on Ray with Redis Streams for inter-agent messaging, a FastAPI + WebSocket backend, and a REST/agent-to-agent API validated by 92 integration tests.
+
+---
 
 ### GitHub Stats
 
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=sabir-yas&show_icons=true&theme=default&hide_border=true" />
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sabir-yas&layout=compact&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sabir-yas&hide_border=true" />
 </p>
