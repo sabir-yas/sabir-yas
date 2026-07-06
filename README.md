@@ -51,7 +51,7 @@
 ### Featured Projects
 
 **SpatiaScale — Cloud-Native Distributed Query Engine**
-Fault-tolerant spatial query engine on AWS EKS indexing 500M+ multi-dimensional points in S3 with sub-10ms p99 latency. Quadtree partitioning + ElastiCache cut memory usage 40%; gRPC/Apache Arrow layer delivered a 5x serialization speedup.
+Fault-tolerant spatial query engine on AWS EKS indexing 148M+ multi-dimensional points (500M+ raw rows) in S3 with sub-10ms p99 latency (7.77ms measured on live EKS traffic). Quadtree partitioning + ElastiCache cut memory usage 76%; gRPC/Apache Arrow layer delivered an 11.3x deserialization speedup.
 
 **Distributed ML Inference Pipeline**
 Fault-tolerant distributed inference system handling 10,000+ simulated concurrent requests/sec with FastAPI, Kafka, Redis, Docker, and PyTorch ResNet-50. Kafka-partitioned queues cut response latency by 85%.
