@@ -1,0 +1,73 @@
+<svg width="1000" height="220" viewBox="0 0 1000 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      :root { color-scheme: light dark; }
+
+      .bg-rect { fill: #0d1117; }
+      .glass-panel { fill: #ffffff; opacity: 0.04; }
+      .glass-stroke { stroke: #58a6ff; stroke-opacity: 0.35; }
+      .headline { fill: #e6edf3; }
+      .accent { fill: #58a6ff; }
+      .subtext { fill: #8b949e; }
+      .ascii { fill: #58a6ff; opacity: 0.5; }
+
+      @media (prefers-color-scheme: light) {
+        .bg-rect { fill: #f6f8fa; }
+        .glass-panel { fill: #0d1117; opacity: 0.03; }
+        .glass-stroke { stroke: #0969da; stroke-opacity: 0.3; }
+        .headline { fill: #1f2328; }
+        .accent { fill: #0969da; }
+        .subtext { fill: #57606a; }
+        .ascii { fill: #0969da; opacity: 0.4; }
+      }
+
+      .mono { font-family: 'Courier New', monospace; }
+      .sans { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; }
+
+      @keyframes softGlow {
+        0%, 100% { opacity: 0.35; }
+        50%      { opacity: 0.6; }
+      }
+      .glow-anim { animation: softGlow 5s ease-in-out infinite; }
+
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+      .cursor { animation: blink 1.1s step-start infinite; }
+    </style>
+
+    <filter id="softblur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg-rect" x="0" y="0" width="1000" height="220" rx="18" />
+
+  <!-- ambient blurred glow shapes, decorative only, safe to animate (no text) -->
+  <circle cx="900" cy="50" r="110" class="glass-panel glow-anim" filter="url(#softblur)" />
+  <circle cx="70" cy="180" r="90" class="glass-panel glow-anim" filter="url(#softblur)" />
+
+  <!-- Glass main panel -->
+  <rect x="24" y="24" width="952" height="172" rx="20" class="glass-panel" stroke-width="1" />
+  <rect x="24" y="24" width="952" height="172" rx="20" fill="none" class="glass-stroke" stroke-width="1.2" />
+
+  <!-- ASCII accent, top right corner -->
+  <g transform="translate(800,44)" class="mono ascii" font-size="10">
+    <text x="0" y="12">  ___ _ _</text>
+    <text x="0" y="24"> / __| | |</text>
+    <text x="0" y="36">| (__| | |</text>
+    <text x="0" y="48"> \___|_|_|</text>
+    <text x="0" y="66"> code // build // ship</text>
+  </g>
+
+  <!-- Headline: static text (reliable across renderers), animated cursor only -->
+  <g transform="translate(52,100)">
+    <text class="sans headline" x="0" y="0" font-size="30" font-weight="700">Hi, I'm Yaseer Sabir</text>
+    <rect x="352" y="-24" width="4" height="32" class="accent cursor" />
+  </g>
+
+  <text x="52" y="140" class="sans subtext" font-size="16">
+    CS student building AI-driven systems &amp; distributed infrastructure
+  </text>
+</svg>
