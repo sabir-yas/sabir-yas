@@ -1,0 +1,137 @@
+<svg width="1000" height="300" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      :root { color-scheme: light dark; }
+
+      .bg-rect { fill: #0d1117; }
+      .glass-panel { fill: #ffffff; opacity: 0.04; }
+      .glass-stroke { stroke: #58a6ff; stroke-opacity: 0.35; }
+      .headline { fill: #e6edf3; }
+      .accent { fill: #58a6ff; }
+      .subtext { fill: #8b949e; }
+      .ascii { fill: #58a6ff; opacity: 0.55; }
+      .pill-bg { fill: #ffffff; opacity: 0.06; }
+      .pill-text { fill: #c9d1d9; }
+      .pill-stroke { stroke: #30363d; }
+
+      @media (prefers-color-scheme: light) {
+        .bg-rect { fill: #f6f8fa; }
+        .glass-panel { fill: #0d1117; opacity: 0.03; }
+        .glass-stroke { stroke: #0969da; stroke-opacity: 0.3; }
+        .headline { fill: #1f2328; }
+        .accent { fill: #0969da; }
+        .subtext { fill: #57606a; }
+        .ascii { fill: #0969da; opacity: 0.45; }
+        .pill-bg { fill: #0d1117; opacity: 0.05; }
+        .pill-text { fill: #24292f; }
+        .pill-stroke { stroke: #d0d7de; }
+      }
+
+      .mono { font-family: 'Courier New', monospace; }
+      .sans { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; }
+
+      .type-line {
+        font-family: 'Courier New', monospace;
+        font-size: 26px;
+        font-weight: bold;
+      }
+
+      @keyframes fadeGlitch {
+        0%   { opacity: 0.15; }
+        45%  { opacity: 0.6; }
+        50%  { opacity: 0.2; }
+        100% { opacity: 0.55; }
+      }
+      .ascii-anim {
+        animation: fadeGlitch 4s ease-in-out infinite;
+      }
+
+      @keyframes pulseIcon {
+        0%, 100% { opacity: 0.55; transform: scale(1); }
+        50%      { opacity: 1;    transform: scale(1.06); }
+      }
+      .pulse-1 { animation: pulseIcon 3s ease-in-out infinite; animation-delay: 0s; transform-origin: center; }
+      .pulse-2 { animation: pulseIcon 3s ease-in-out infinite; animation-delay: 0.4s; transform-origin: center; }
+      .pulse-3 { animation: pulseIcon 3s ease-in-out infinite; animation-delay: 0.8s; transform-origin: center; }
+      .pulse-4 { animation: pulseIcon 3s ease-in-out infinite; animation-delay: 1.2s; transform-origin: center; }
+      .pulse-5 { animation: pulseIcon 3s ease-in-out infinite; animation-delay: 1.6s; transform-origin: center; }
+      .pulse-6 { animation: pulseIcon 3s ease-in-out infinite; animation-delay: 2.0s; transform-origin: center; }
+
+      .cursor {
+        animation: blink 1s step-start infinite;
+      }
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+    </style>
+
+    <filter id="softblur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+
+    <clipPath id="typeClip">
+      <rect x="0" y="0" width="0" height="40">
+        <animate attributeName="width" values="0;560;560;0" keyTimes="0;0.35;0.85;1" dur="8s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg-rect" x="0" y="0" width="1000" height="300" rx="18" />
+
+  <!-- ambient blurred glow shapes for glass effect -->
+  <circle cx="880" cy="60" r="120" class="glass-panel" filter="url(#softblur)" />
+  <circle cx="60" cy="250" r="100" class="glass-panel" filter="url(#softblur)" />
+
+  <!-- Glass main panel -->
+  <rect x="24" y="24" width="952" height="252" rx="20" class="glass-panel" stroke-width="1" />
+  <rect x="24" y="24" width="952" height="252" rx="20" fill="none" class="glass-stroke" stroke-width="1.2" />
+
+  <!-- ASCII accent, top right corner -->
+  <g transform="translate(770,40)" class="mono ascii ascii-anim" font-size="10">
+    <text x="0" y="12">  ___ _ _</text>
+    <text x="0" y="24"> / __| | |</text>
+    <text x="0" y="36">| (__| | |</text>
+    <text x="0" y="48"> \___|_|_|</text>
+    <text x="0" y="66"> code // build // ship</text>
+  </g>
+
+  <!-- Headline with typing reveal -->
+  <g transform="translate(52,80)">
+    <text class="type-line headline" x="0" y="0" clip-path="url(#typeClip)">Hi, I'm Yaseer Sabir</text>
+    <rect x="0" y="-24" width="4" height="30" class="accent cursor" />
+  </g>
+
+  <text x="52" y="118" class="sans subtext" font-size="15">
+    CS student building AI-driven systems &amp; distributed infrastructure
+  </text>
+
+  <!-- About bullets -->
+  <g class="sans" font-size="12.5">
+    <text x="52" y="152" class="headline">🎓 B.S. Computer Science, Honors Scholars Program — University of Colorado Denver</text>
+    <text x="52" y="174" class="headline">🤖 AI Fellow @ Colorado Thrives — agentic AI pipelines for a 120,000+ stakeholder network</text>
+    <text x="52" y="196" class="headline">🧠 Former ML Research Intern @ CU Anschutz — spatial transcriptomics pipelines</text>
+    <text x="52" y="218" class="headline">🛠️ Distributed systems, backend infrastructure &amp; AI agent architectures</text>
+  </g>
+
+  <!-- Tech stack pulse row -->
+  <g transform="translate(52,236)" class="sans" font-size="11.5">
+    <g class="pulse-1"><rect x="0" y="0" width="66" height="26" rx="13" class="pill-bg pill-stroke" stroke-width="1"/><text x="12" y="17" class="pill-text">Python</text></g>
+    <g class="pulse-2" transform="translate(76,0)"><rect x="0" y="0" width="74" height="26" rx="13" class="pill-bg pill-stroke" stroke-width="1"/><text x="12" y="17" class="pill-text">PyTorch</text></g>
+    <g class="pulse-3" transform="translate(160,0)"><rect x="0" y="0" width="74" height="26" rx="13" class="pill-bg pill-stroke" stroke-width="1"/><text x="12" y="17" class="pill-text">FastAPI</text></g>
+    <g class="pulse-4" transform="translate(244,0)"><rect x="0" y="0" width="60" height="26" rx="13" class="pill-bg pill-stroke" stroke-width="1"/><text x="12" y="17" class="pill-text">Kafka</text></g>
+    <g class="pulse-5" transform="translate(314,0)"><rect x="0" y="0" width="68" height="26" rx="13" class="pill-bg pill-stroke" stroke-width="1"/><text x="12" y="17" class="pill-text">Next.js</text></g>
+    <g class="pulse-6" transform="translate(392,0)"><rect x="0" y="0" width="56" height="26" rx="13" class="pill-bg pill-stroke" stroke-width="1"/><text x="12" y="17" class="pill-text">AWS</text></g>
+    <g class="pulse-1" transform="translate(458,0)"><rect x="0" y="0" width="82" height="26" rx="13" class="pill-bg pill-stroke" stroke-width="1"/><text x="12" y="17" class="pill-text">PostgreSQL</text></g>
+    <g class="pulse-2" transform="translate(550,0)"><rect x="0" y="0" width="56" height="26" rx="13" class="pill-bg pill-stroke" stroke-width="1"/><text x="12" y="17" class="pill-text">Redis</text></g>
+  </g>
+
+  <!-- Social pills, right side -->
+  <g transform="translate(700,238)" class="sans" font-size="11.5">
+    <rect x="0" y="0" width="120" height="26" rx="13" class="pill-bg pill-stroke" stroke-width="1"/>
+    <text x="14" y="17" class="pill-text accent">✉ Email Me</text>
+
+    <rect x="130" y="0" width="130" height="26" rx="13" class="pill-bg pill-stroke" stroke-width="1"/>
+    <text x="144" y="17" class="pill-text accent">GitHub Stats</text>
+  </g>
+</svg>
