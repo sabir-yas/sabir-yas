@@ -1,8 +1,8 @@
-<h1 align="center">Hi, I'm Yaseer Sabir 👋</h1>
+<div align="center">
 
-<p align="center">
-  CS student building AI-driven systems &amp; distributed infrastructure
-</p>
+<img src="./banner.svg" alt="Yaseer Sabir banner" width="100%" />
+
+</div>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/yaseer-sabir-0a24b4200/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -13,7 +13,7 @@
 
 ### About Me
 
-- 🎓 B.S. Computer Science, Honors Scholars Program @ University of Colorado Denver 
+- 🎓 B.S. Computer Science, Honors Scholars Program @ University of Colorado Denver
 - 🤖 AI Fellow @ **Colorado Thrives** — building agentic AI pipelines for a 120,000+-stakeholder workforce network
 - 🧠 Former ML Research Intern @ **CU Anschutz Medical Campus** — high-throughput pipelines for spatial transcriptomics research
 - 🛠️ I like building distributed systems, backend infrastructure, and AI agent architectures
