@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./banner.svg" alt="Yaseer Sabir — software engineering, distributed systems, and artificial intelligence" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Yaseer%20Sabir&fontSize=50&fontColor=ffffff&desc=Software%20Engineering%20%E2%80%A2%20Distributed%20Systems%20%E2%80%A2%20AI&descSize=18&descAlignY=75&animation=fadeIn" alt="Yaseer Sabir — software engineering, distributed systems, and artificial intelligence" width="100%" />
 
 </div>
 
