@@ -73,7 +73,7 @@
 
 ## Featured Projects
 
-### SpatiaScale — Cloud-Native Distributed Query Engine
+### [SpatiaScale — Cloud-Native Distributed Query Engine](https://github.com/sabir-yas/spatiascale)
 
 `AWS EKS` · `Amazon S3` · `ElastiCache` · `gRPC` · `Apache Arrow`
 
@@ -82,7 +82,7 @@
 * Reduced memory usage by **76%** through quadtree-based spatial partitioning and ElastiCache-backed caching.
 * Improved deserialization performance by **11.3×** using a gRPC and Apache Arrow data-transfer layer.
 
-### AI Drug Discovery Swarm
+### [AI Drug Discovery Swarm](https://github.com/sabir-yas/drug-discovery-swarm)
 
 `Ray` · `Redis Streams` · `RDKit` · `AutoDock Vina` · `FHIR R4`
 
@@ -93,7 +93,7 @@
 * Validated the system with **92 integration tests**.
 * Placed **3rd out of 39 teams** at Lynx Hack 2026.
 
-### Distributed Machine Learning Inference Pipeline
+### [Distributed Machine Learning Inference Pipeline](https://github.com/sabir-yas/distributed-ml-inference-pipeline)
 
 `FastAPI` · `Apache Kafka` · `Redis` · `Docker` · `PyTorch`
 
@@ -103,7 +103,7 @@
 * Reduced response latency by **85%** compared with the initial pipeline design.
 * Added Redis-backed result caching and Docker-based service isolation.
 
-### Trivia Wizards — Real-Time Multi-Interface Trivia Platform
+### [Trivia Wizards — Real-Time Multi-Interface Trivia Platform](https://github.com/sabir-yas/trivia-wizards-spring-26)
 
 `Next.js` · `Prisma` · `Supabase` · `PostgreSQL` · `Socket.IO`
 
@@ -112,7 +112,7 @@
 * Eliminated polling overhead to provide low-latency updates across every connected interface.
 * Used Prisma and Supabase PostgreSQL for persistent game, question, and session data.
 
-### ETL Pipeline — dbt, Snowflake, and Airflow
+### [ETL Pipeline — dbt, Snowflake, and Airflow](https://github.com/sabir-yas/etl-pipeline-project)
 
 `dbt` · `Snowflake` · `Apache Airflow` · `Astronomer Cosmos`
 
@@ -122,7 +122,7 @@
 * Scheduled daily pipeline runs with dependency-aware task execution.
 * Added source-level and mart-level data quality tests throughout the transformation workflow.
 
-### LEGv8 Pipelined CPU Simulator
+### [LEGv8 Pipelined CPU Simulator](https://github.com/sabir-yas/pipeline-cpu-simulator)
 
 `Python` · `Computer Architecture` · `Pipeline Simulation`
 
