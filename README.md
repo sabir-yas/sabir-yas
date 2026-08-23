@@ -18,7 +18,7 @@
 ## About Me
 
 * 🎓 B.S. in Computer Science, Honors Scholars Program — University of Colorado Denver
-* 🤖 AI Fellow at **Colorado Thrives**, building agentic AI pipelines for a workforce network serving more than 120,000 stakeholders
+* 🤖 Former AI Fellow at **Colorado Thrives**, building agentic AI pipelines for a workforce network serving more than 120,000 stakeholders
 * 🧠 Former Machine Learning Research Intern at **CU Anschutz Medical Campus**, where I developed high-throughput pipelines for spatial transcriptomics research
 * 🛠️ Interested in distributed systems, backend infrastructure, data engineering, and AI agent architectures
 * 📫 Reach me through [email](mailto:yaseersabir005@gmail.com) or [LinkedIn](https://www.linkedin.com/in/yaseer-sabir-0a24b4200/)
